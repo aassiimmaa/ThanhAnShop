@@ -1,0 +1,12 @@
+.type_product_item{
+    font-size: 1.6rem;
+    padding: 12px 8px;
+    min-width: 76px;
+    text-align: center;
+    margin: 0;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #ccc;
+    }
+}

@@ -1,0 +1,266 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+}
+
+.modal{
+    width: 800px;
+    height: 400px;
+    background-color: #ccc;
+    margin: auto;
+    display: flex;
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+    position: relative;
+    animation: appear ease-in-out 0.2s;
+}
+
+.sign_in_form{
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.logo{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(#D8E7F6, #F5F6FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo_img{
+    width: 200px;
+}
+
+.slogan{
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #3886C6;
+}
+
+.sign_in_form{
+    padding: 12px 28px;
+}
+
+.hello_user{
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.description{
+    font-size: 1.4rem;
+}
+
+.input_phone_number{
+    margin-top: 24px;
+    font-size: 1.8rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 8px 0;
+    width: 100%;
+    outline: none;
+
+    &::placeholder{
+        font-size: 1.8rem;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.login_btn{
+    margin-top: 24px;
+    width: 100%;
+}
+
+.back_to_input_phone{
+    margin-bottom: 24px;
+}
+
+.description_password{
+    margin-bottom: 12px;
+}
+
+.password_wrapper-phone{
+    margin-top: 24px;
+}
+
+.password_icon_phone{
+   margin-left: 12px;
+}
+
+.change_login_method{
+    color: #3886C6;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.suggested_method{
+    margin-top: 36px;
+    margin-bottom: 8px;
+    text-align: center;
+    user-select: none;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.other_login_methods{
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.facebook_icon,
+.google_icon{
+    margin: 0 8px;
+
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.facebook_icon{
+    color: #25479F;
+}
+
+.google_icon{
+    color: #FF4D43;
+}
+
+.note, .law{
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.note{
+    margin-left: 24%;
+}
+
+.law{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.back_btn{
+    margin-top: 12px;
+    font-size: 2.4rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input_email,
+.input_password{
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 8px 0;
+    font-size: 1.6rem;
+}
+
+.input_email{
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.input_password{
+    background-color: transparent;
+    border-bottom: none;
+    width: 92%;
+}
+
+.password_wrapper,
+.password_wrapper-phone{
+    background-color: #E9F1FF;
+    width: 100%;
+    border-bottom: 2px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.password_icon{
+    position: absolute;
+    top: 213px;
+    right: 320px;
+    font-size: 1.6rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.forgot_password{
+    color: #3886C6;
+    font-weight: 400;
+    font-size: 1rem;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.sign_up_suggest,
+.sign_up_link{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.sign_up_suggest{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sign_up_link{
+    text-decoration: underline;
+    color: #3886C6;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.password_wrapper + .password_wrapper{
+    margin-top: 24px;
+}
+
+.sign_up_btn{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.sign_up_password_icon,
+.sign_up_confirm_password_icon{
+    margin-left: 12px;
+}
+
+.error_input{
+    color: red;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

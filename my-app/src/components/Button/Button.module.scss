@@ -1,0 +1,86 @@
+.wrapper{
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper{
+        margin-left: 8px;
+    }
+
+    &.disabled{
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.icon + .title,
+.title + .icon{
+    margin-left: 8px;
+}
+
+.icon{
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.rounded{
+    border-radius: 999px;
+    border-color: rgba(22, 24, 35, 0.12);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+
+    &:hover{
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.primary{
+    background-color: #FF4D43;
+    color: #fff;
+    border-color: #FF4D43;
+    transition: linear 0.15s;
+
+    &:hover{
+        background: #fff;
+        color: #FF4D43;
+        cursor: pointer;
+    }
+}
+
+.outline{
+    color: rgb(11, 116, 229);
+    border-color: rgb(11, 116, 229);
+    border-radius: 4px;
+    transition: linear 0.15s;
+
+    &:hover{
+        background-color: rgb(11, 116, 229);
+        color: #fff;
+        cursor: pointer;
+        border-color: currentColor;
+    }
+}
+
+.text{
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.small{
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large{
+    min-width: 240px;
+    padding: 8px;
+}

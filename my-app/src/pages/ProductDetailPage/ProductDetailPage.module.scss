@@ -1,0 +1,166 @@
+span{
+    user-select: none;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: auto;
+}
+
+.link_to_detail{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: #a5a5a5;
+    padding: 4px 0;
+}
+
+.detail{
+    min-height: 500px;
+    background-color: #fff;
+    display: flex;
+}
+
+.detail_image{
+    width: 512px;
+    min-height: 500px;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.large_img_container{
+
+}
+
+.large_img{
+    width: 480px;
+    height: 480px;
+    object-fit: contain;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.small_img_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.small_img{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.image_wrapper{
+    border: 3px solid transparent;
+}
+
+.active{
+    border: 3px solid rgb(26, 148, 255);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.detail_product{
+    margin-left: 12px;
+}
+
+.title_product{
+    font-size: 2.4rem;
+    font-weight: lighter;
+    margin: 12px 0;
+}
+
+.rated_star{
+    font-size: 1rem;
+    display: inline-block;
+    color: yellow;
+}
+
+.price{
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.to_address,
+.address,
+.change_address{
+    font-size: 1.4rem;
+}
+
+.address{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.change_address{
+    color: rgb(11, 85, 244);
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.7;
+    };
+}
+
+.quantity{
+    display: flex;
+    margin-top: 36px;
+    position: relative;
+    flex-wrap: wrap;
+
+    &::before{
+        content: "";
+        height: 1px;
+        background-color: #ccc;
+        width: 760px;
+        position: absolute;
+        top: -18px;
+    }
+
+    &::after{
+        content: "";
+        height: 1px;
+        background-color: #ccc;
+        width: 760px;
+        position: absolute;
+        bottom: -18px;
+    }
+}
+
+.title_number{
+    width: 744px;
+    font-size: 1.4rem;
+    margin-top: 0;
+    user-select: none;
+}
+
+.minus,
+.plus,
+.number{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 12px;
+    font-size: 1.4rem;
+}
+
+.minus, .plus{
+    cursor: pointer;
+}
+
+.number{
+    width: 14px;
+    text-align: center;
+    user-select: none;
+}
+
+.buy_btn{
+    margin-top: 36px;
+}

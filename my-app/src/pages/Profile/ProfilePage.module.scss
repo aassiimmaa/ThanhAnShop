@@ -1,0 +1,177 @@
+.profile_wrapper{
+    width: 1270px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.link_to_profile{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: #a5a5a5;
+    padding: 4px 0;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #c7bfbf;
+    }
+}
+
+.link{
+    &:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+.title_page{
+    margin: 4px 0;
+}
+
+.account{
+    height: 500px;
+    display: flex;
+}
+
+.avatar_wrapper{
+    width: 420px;
+    height: 500px;
+    border-right: 1px solid #e9e5e5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.upload{
+    margin-top: 12px;
+}
+
+.info_user{
+    padding: 32px;
+    flex: 1;
+}
+
+.title{
+    margin: 0 0 24px 16px;
+    font-size: 32px;
+}
+
+.info_content{
+    display: flex;
+    align-items: center;
+}
+
+.info_label{
+    font-size: 24px;
+    margin: 16px;
+    width: 200px;
+}
+
+.info{
+    font-size: 24px;
+    margin: 16px;
+    width: 428px;
+}
+
+.change_info_btn{
+    color: rgb(26, 148, 255);
+    border: 1px solid rgb(26, 148, 255);
+
+    &:hover{
+        background-color: rgb(26, 148, 255) !important; 
+        color: #fff !important;
+    }
+}
+
+.update_btn{
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 48px;
+    transform: translateX(-50%);
+    color: rgb(26, 148, 255);
+    border: 1px solid rgb(26, 148, 255);
+
+    &:hover{
+        background-color: rgb(26, 148, 255) !important; 
+        color: #fff !important;
+    }
+}
+
+.change_form_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change_form_content{
+    width: 380px;
+    min-height: 180px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label_change{
+    margin: 24px 32px;
+    font-size: 24px;
+}
+
+.input_change_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_change_wrapper input + input{
+    margin-top: 24px;
+}
+
+
+.input_change{
+    width: 300px;
+    padding: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.update_change_btn,
+.update_change_btn_password{
+    width: 150px;
+    margin-top: 24px;
+    color: rgb(26, 148, 255);
+    border: 1px solid rgb(26, 148, 255);
+
+    &:hover{
+        background-color: rgb(26, 148, 255) !important; 
+        color: #fff !important;
+    }
+}
+
+.update_change_btn_password{
+    margin-bottom: 24px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+}
+.search_input{
+    border-radius: 1px;
+    width: 82%;
+    border: none;
+    padding: 8px;
+}
+
+.search_btn{
+    border-radius: 0;
+    border: none;
+    background-color: rgb(13, 92, 182);
+
+    &:hover{
+        background: #ccc !important;
+    }
+}

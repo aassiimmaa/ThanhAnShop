@@ -1,0 +1,44 @@
+.title{
+    font-size: 2rem;
+    color: #000;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.adding_btn{
+    width: 125px;
+    height: 125px;
+    border: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+    &:hover{
+        cursor: pointer;
+        border-color: rgb(26, 148, 255);
+        
+        .plus_icon{
+            color: rgb(26, 148, 255);;
+        }
+    }
+}
+
+.plus_icon{
+    font-size: 48px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.table{
+    margin-top: 24px;
+}

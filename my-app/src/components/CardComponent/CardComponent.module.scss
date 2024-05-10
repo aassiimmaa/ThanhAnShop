@@ -1,0 +1,54 @@
+.card{
+    width: 200px;
+    height: 300px;
+    margin-top: 12px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.9;
+        transition: linear 0.1s;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.card_content{
+    padding: 12px;
+    font-size: 1.4rem;
+}
+
+.product_name{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.product_rated{
+    margin: 12px 0;
+}
+
+.product_price_discount{
+    color: red;
+}
+
+.product_discount{
+    margin-left: 6px;
+    font-size: 1.2rem;
+}
+
+.product-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.official_logo{
+    width: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
