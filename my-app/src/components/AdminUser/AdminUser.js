@@ -10,7 +10,7 @@ function AdminUser() {
         {
           title: 'Name',
           dataIndex: 'name',
-          render: (text) => <a>{text}</a>,
+          render: (text) => <a href='/'>{text}</a>,
         },
         {
           title: 'Age',
@@ -51,8 +51,9 @@ function AdminUser() {
           disabled: record.name === 'Disabled User',
           name: record.name,
         }),
-      };
-      
+    };
+    
+
     return (
         <div className={cx('manage_user')}>
             <h1 className={cx('title')}>Quản lý người dùng</h1>
@@ -69,6 +70,7 @@ function AdminUser() {
                     dataSource={data}
                 />
             </div>
+            
         </div>
     );
 }

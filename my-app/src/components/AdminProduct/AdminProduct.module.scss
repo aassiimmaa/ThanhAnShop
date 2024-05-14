@@ -25,7 +25,11 @@
 
     &:hover{
         cursor: pointer;
-        opacity: 0.7;
+        border-color: rgb(26, 148, 255);
+        
+        .plus_icon{
+            color: rgb(26, 148, 255);;
+        }
     }
 }
 
@@ -37,4 +41,32 @@
 
 .table{
     margin-top: 24px;
+}
+
+.modal{
+    form{
+        margin: 16px 16px -24px 16px;
+    }
+}
+
+.submit_btn{
+    float: right;
+}
+
+.product_image{
+    margin: -12px 0 12px 60px;
+    margin-left: 60px;
+    margin-bottom: 12px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    
+    img{
+        object-fit: contain;
+        width: 100%;
+    }
 }

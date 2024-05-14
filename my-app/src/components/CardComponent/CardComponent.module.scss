@@ -23,6 +23,9 @@
 .product_name{
     margin-top: 0;
     margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product_rated{
