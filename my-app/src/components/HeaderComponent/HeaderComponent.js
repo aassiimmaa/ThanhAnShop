@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import * as UserServices from '../../services/UserServices'
 import { resetUser } from '../../redux/slides/userSlide';
+import { searchProduct } from '../../redux/slides/ProductSlide';
 
 const cx = classNames.bind(styles)
 
@@ -55,6 +56,10 @@ function HeaderComponent() {
         </div>
     )
 
+    const onSearch = (e) => {
+        dispatch(searchProduct(e.target.value))
+    }
+
     return (
         <div className={cx('wrapper_Header')}>
             <Row className={cx('container')}>
@@ -64,7 +69,7 @@ function HeaderComponent() {
                     </Link>
                 </Col>
                 <Col span={13} className={cx('search_area')}>
-                    <Search size='large' placeholder='Input search text' textButton='Tìm kiếm'/>
+                    <Search size='large' placeholder='Input search text' textbutton='Tìm kiếm' onChange={onSearch}/>
                 </Col>
                 <Col span={6} className={cx('header_menu')}>
                     {user?.avatar ? 

@@ -9,7 +9,7 @@ import {useMutation} from '@tanstack/react-query'
 import * as message from '../Message/Message'
 import { useNavigate } from 'react-router-dom'
 import {jwtDecode} from 'jwt-decode'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { updateUser } from '../../redux/slides/userSlide'
 
 const cx = classNames.bind(styles)
@@ -171,7 +171,6 @@ function SignIn({close}) {
         }
     },[mutationSignIn.isSuccess, mutationSignIn.isError, mutationSignIn.data?.status, mutationSignIn.data?.access_token, navigate, closeModal])
 
-    const user = useSelector((state) => state.user)
     const handleGetDetailsUser = async ( id, token) => {
         const res = await UserServices.getDetailUser(id, token)
         dispatch(updateUser(res))

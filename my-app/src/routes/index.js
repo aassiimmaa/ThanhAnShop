@@ -22,12 +22,12 @@ export const routes = [
         page: Products
     },
     {   
-        path: '/typeProducts',
+        path: '/products/:type',
         page: TypeProductPage,
         isShowHeader: true
     },
     {   
-        path: '/productDetail',
+        path: '/productDetail/:id',
         page: ProductDetail,
         isShowHeader: true
     },

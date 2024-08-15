@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 
 function TypeProduct({name}) {
     return (
-        <Link to='/typeproducts'>
+        <Link to={`/products/${name}`}>
             <p className={cx('type_product_item')}>
                 {name}
             </p>

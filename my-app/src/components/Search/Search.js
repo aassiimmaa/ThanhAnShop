@@ -6,11 +6,11 @@ import styles from './Search.module.scss'
 const cx = classNames.bind(styles)
 
 function Search({...children}) {
-    const {size, placeholder, textButton} = children
+    const {size, placeholder, textbutton} = children
     return (
         <div className="search">
-            <Input className={cx('search_input')} size={size} placeholder={placeholder} />
-            <Button className={cx('search_btn')} size={size} icon={<SearchOutlined />}>{textButton}</Button>
+            <Input className={cx('search_input')} size={size} placeholder={placeholder} {...children}/>
+            <Button className={cx('search_btn')} size={size} icon={<SearchOutlined />}>{textbutton}</Button>
         </div>
     );
 }

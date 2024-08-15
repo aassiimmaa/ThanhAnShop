@@ -32,6 +32,7 @@ function TypeProductPage() {
                         return(
                             <Link to='/productDetail'>
                                 <CardComponent 
+                                    key = {product.name}
                                     image = {product.image}
                                     name = {product.name}
                                     price = {product.price}
